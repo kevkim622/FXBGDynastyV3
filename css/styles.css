@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   margin: 0;
 }
@@ -80,3 +81,52 @@ body::before {
   content: "";
   height: 2rem;
 }
+
+/* changing button color
+
+.btn-pink { 
+  color: #ffffff; 
+  background-color: #ED91E8; 
+  border-color: #ED91E8; 
+} 
+ 
+.btn-pink:hover, 
+.btn-pink:focus, 
+.btn-pink:active, 
+.btn-pink.active, 
+.open .dropdown-toggle.btn-pink { 
+  color: #ffffff; 
+  background-color: #49247A; 
+  border-color: #ED91E8; 
+} 
+ 
+.btn-pink:active, 
+.btn-pink.active, 
+.open .dropdown-toggle.btn-pink { 
+  background-image: none; 
+} 
+ 
+.btn-pink.disabled, 
+.btn-pink[disabled], 
+fieldset[disabled] .btn-pink, 
+.btn-pink.disabled:hover, 
+.btn-pink[disabled]:hover, 
+fieldset[disabled] .btn-pink:hover, 
+.btn-pink.disabled:focus, 
+.btn-pink[disabled]:focus, 
+fieldset[disabled] .btn-pink:focus, 
+.btn-pink.disabled:active, 
+.btn-pink[disabled]:active, 
+fieldset[disabled] .btn-pink:active, 
+.btn-pink.disabled.active, 
+.btn-pink[disabled].active, 
+fieldset[disabled] .btn-pink.active { 
+  background-color: #ED91E8; 
+  border-color: #ED91E8; 
+} 
+ 
+.btn-pink .badge { 
+  color: #ED91E8; 
+  background-color: #ffffff; 
+}
+
