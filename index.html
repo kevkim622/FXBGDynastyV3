@@ -2,8 +2,8 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Compiled Sass file-->
     <link href="/css/maincombine.css" rel="stylesheet">
@@ -12,14 +12,17 @@
     <link rel="stylesheet" href="./css/styles.css"> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+
     <script src="./js/script.js" defer></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
       (function () {
         emailjs.init("vVwH_81HgIndC3v2d");
       })();
     </script>
+    <!--Font Awesome CDN-->
+    <script src="https://kit.fontawesome.com/ad73eee1c3.js" crossorigin="anonymous"></script>
 
     <title>FXBG Dynasty</title>
 
@@ -124,7 +127,7 @@
 
       </div>
     </section>
-    </div>
+
 
     <!--Button Blocks-->
 
@@ -135,7 +138,7 @@
             <div class="card bg-dark text-light" style="height: 20rem;">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
-                  <i class="bi bi-book"></i>
+                  <i class="fa-solid fa-book" style="color: #ffffff;"></i>
                 </div>
                 <h3 class="card-title mb-3">History</h3>
                 <p class="card-text">
@@ -152,7 +155,7 @@
             <div class="card bg-secondary text-light" style="height: 20rem;">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
-                  <i class="bi bi-people"></i>
+                  <i class="fa-solid fa-people-group" style="color: #ffffff;"></i>
                 </div>
                 <h3 class="card-title mb-3">Managers</h3>
                 <p class="card-text">
@@ -168,7 +171,9 @@
             <div class="card bg-dark text-light" style="height: 20rem;">
               <div class="card-body text-center">
                 <div class="h1 mb-3">
-                  <i class="bi bi-list-ol"></i>
+                  <!--
+                  <i class="bi bi-list-ol"></i>-->
+                  <i class="fa-solid fa-ranking-star" style="color: #ffffff;"></i>
                 </div>
                 <h3 class="card-title mb-3">Rankings</h3>
                 <p class="card-text">
@@ -189,7 +194,7 @@
       <div class="container">
         <div class="row align-items-center justify-content-between">
           <div class="col-md">
-            <img src="./img/randall.png" class="img-fluid p-5" alt="picture of randall" />
+            <img src="./img/randall.png" class="img-fluid p-5" alt="picture of randall">
           </div>
           <div class="col-md p-2">
             <h2>About Us</h2>
@@ -213,7 +218,7 @@
 
     <!--Learn More 2-->
 
-    <section id="learn" class="p-5 bg-dark text-light">
+    <section id="recap" class="p-5 bg-dark text-light">
       <div class="container">
         <div class="row align-items-center justify-content-between"></div>
 
@@ -223,9 +228,9 @@
             champion was taken down well before he could even make playoffs. 2 teams that previously finished in the
             championship game fell back down to Earth and have become pure rebuilding teams. After a complete throw job
             by Deandre Hopkins on the Tucson Trash Pandas, the winner of your 2022-2023 Only Bad Trades League:
-          <p class="fw-bold fs-5"><i class="bi bi-trophy-fill"></i> Chincoteague Sharts - Kevin
+          <p class="fw-bold fs-5"><i class="fa-solid fa-medal" style="color: #ffffff;"></i> Chincoteague Sharts - Kevin
             France</p>
-          </p>
+
           <p>On the backs of Patrick Mahomes, Travis Kelce, and Jalen Hurts, Kevin finally broke through for eternal
             glory. One of the league's most notorious fantasy hermits, even the most tuned-in fantasy players were left
             stunned.
@@ -243,7 +248,7 @@
 
     <!--FAQ section (bootstrap accordion)-->
 
-    <section id="questions" class="p-5">
+    <section id="faq" class="p-5">
       <div class="container">
         <h2 class="text-center mb-4">Frequently Asked Questions</h2>
         <div class="accordion accordion-flush" id="questions">
@@ -251,7 +256,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-one" aria-expanded="false" aria-controls="flush-collapseOne">
+                data-bs-target="#question-one" aria-expanded="false" aria-controls="question-one">
                 Do I have a chance of winning this year?
               </button>
             </h2>
@@ -265,7 +270,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-two" aria-expanded="false" aria-controls="flush-collapseTwo">
+                data-bs-target="#question-two" aria-expanded="false" aria-controls="question-two">
                 Who is the worst trader of the league?
               </button>
             </h2>
@@ -279,7 +284,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                data-bs-target="#question-three" aria-expanded="false" aria-controls="flush-collapseThree">
+                data-bs-target="#question-three" aria-expanded="false" aria-controls="question-three">
                 How do I win the league?
               </button>
             </h2>
@@ -308,7 +313,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/briang.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/briang.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Brian Goulet</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -333,7 +338,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/carterr.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/carterr.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Carter Riner</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -358,7 +363,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/coltonh.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/coltonh.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Colton Hall</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -383,7 +388,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/genec.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/genec.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Gene Chung</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -408,7 +413,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/gregj.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/gregj.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Greg Johnson</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -433,7 +438,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/joshh.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/joshh.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Josh Honaker</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -458,7 +463,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/kevf.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/kevf.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Kevin France</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -483,7 +488,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/kevk.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/kevk.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Kevin Kim</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -508,7 +513,7 @@
           <div class="col-md-6 col-lg-3 offset-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/randalld.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/randalld.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Randall Dehlbomb</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -533,7 +538,7 @@
           <div class="col-md-6 col-lg-3">
             <div class="card bg-light">
               <div class="card-body text-center">
-                <img src="./img/managerpics/randyg.jpg" class="rounded-circle mb-3" alt="" />
+                <img src="./img/managerpics/randyg.jpg" class="rounded-circle mb-3" alt="">
                 <h3 class="card-title mb-3">Randy Gray</h3>
                 <ul class="list-group list-group-flush">
                   <li class="list-group-item text-start">Last Year Finished:
@@ -554,6 +559,8 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
     </section>
 
     <!--Contact Form-->
@@ -567,7 +574,7 @@
         <!-- Name input -->
         <div class="mb-3">
           <label class="form-control-label" for="name">Name</label>
-          <input class="form-control " id="name" type="text" placeholder="Name" data-sb-validations="required" />
+          <input class="form-control " id="name" type="text" placeholder="Name" data-sb-validations="required">
           <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
         </div>
 
@@ -575,7 +582,7 @@
         <div class="mb-3">
           <label class="form-label" for="emailAddress">Email Address</label>
           <input class="form-control" id="emailAddress" type="email" placeholder="Email Address"
-            data-sb-validations="required, email" />
+            data-sb-validations="required, email">
 
           <div class="invalid-feedback" data-sb-feedback="emailAddress:email">Email is not valid.</div>
         </div>
@@ -583,7 +590,7 @@
         <!-- Message input -->
         <div class="mb-3">
           <label class="form-label" for="message">Message</label>
-          <textarea class="form-control" id="message" type="text" placeholder="Message" style="height: 10rem;"
+          <textarea class="form-control" id="message" type="text" style="height: 10rem;"
             data-sb-validations="required"></textarea>
           <div class="invalid-feedback" data-sb-feedback="message:required">Message is required.</div>
         </div>
@@ -604,7 +611,7 @@
         </div>
 
       </form>
-      </div>
+
     </section>
 
 
@@ -612,7 +619,7 @@
 
     <footer class="p-5 bg-dark text-white text-center position-relative">
       <div class="container">
-        <p class="lead">Copyright &copy2023 FXBG Dynasty</p>
+        <p class="lead">Copyright &copy;2023 FXBG Dynasty</p>
         <a href="#" class="position-absolute bottom-0 end-0 p-5">
           <i class="bi bi-arrow-up-circle h1"></i>
         </a>
