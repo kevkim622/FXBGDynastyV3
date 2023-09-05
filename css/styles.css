@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
-
 body {
   margin: 0;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .carousel {
@@ -82,51 +87,26 @@ body::before {
   height: 2rem;
 }
 
-/* changing button color
-
-.btn-pink { 
-  color: #ffffff; 
-  background-color: #ED91E8; 
-  border-color: #ED91E8; 
-} 
- 
-.btn-pink:hover, 
-.btn-pink:focus, 
-.btn-pink:active, 
-.btn-pink.active, 
-.open .dropdown-toggle.btn-pink { 
-  color: #ffffff; 
-  background-color: #49247A; 
-  border-color: #ED91E8; 
-} 
- 
-.btn-pink:active, 
-.btn-pink.active, 
-.open .dropdown-toggle.btn-pink { 
-  background-image: none; 
-} 
- 
-.btn-pink.disabled, 
-.btn-pink[disabled], 
-fieldset[disabled] .btn-pink, 
-.btn-pink.disabled:hover, 
-.btn-pink[disabled]:hover, 
-fieldset[disabled] .btn-pink:hover, 
-.btn-pink.disabled:focus, 
-.btn-pink[disabled]:focus, 
-fieldset[disabled] .btn-pink:focus, 
-.btn-pink.disabled:active, 
-.btn-pink[disabled]:active, 
-fieldset[disabled] .btn-pink:active, 
-.btn-pink.disabled.active, 
-.btn-pink[disabled].active, 
-fieldset[disabled] .btn-pink.active { 
-  background-color: #ED91E8; 
-  border-color: #ED91E8; 
-} 
- 
-.btn-pink .badge { 
-  color: #ED91E8; 
-  background-color: #ffffff; 
+.accordion-button:link,
+.accordion-button:visited,
+.accordion-button:hover,
+.accordion-button:active {
+  background-color: #fff !important;
+  color: black !important;
+  text-decoration: none !important;
+  border: hidden !important;
+  border-color: #fff !important;
+  box-shadow: 0px !important;
 }
 
+.accordion-button:not(.collapsed) {
+  color: black !important;
+  background-color: #fff !important;
+}
+
+.accordion-button:focus {
+  z-index: 3;
+  border-color: #fff !important;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem #fff !important;
+}
