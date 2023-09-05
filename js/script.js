@@ -17,45 +17,53 @@ buttons.forEach((button) => {
 });
 
 (function () {
-  'use strict'
+  "use strict";
 
   // Fetch all the forms we want to apply custom Bootstrap validation styles to
-  var forms = document.querySelectorAll('.needs-validation')
+  var forms = document.querySelectorAll(".needs-validation");
 
   // Loop over them and prevent submission
-  Array.prototype.slice.call(forms)
-    .forEach(function (form) {
-      form.addEventListener('submit', function (event) {
+  Array.prototype.slice.call(forms).forEach(function (form) {
+    form.addEventListener(
+      "submit",
+      function (event) {
         if (!form.checkValidity()) {
-          event.preventDefault()
-          event.stopPropagation()
+          event.preventDefault();
+          event.stopPropagation();
         }
 
-        form.classList.add('was-validated')
-      }, false)
-    })
-})()
+        form.classList.add("was-validated");
+      },
+      false
+    );
+  });
+})();
 
-function sendMail(){
+function sendMail() {
   var params = {
-    name: document.getElementById('name').value,
-    email: document.getElementById('emailAddress').value,
-    message: document.getElementById('message').value,
+    name: document.getElementById("name").value,
+    email: document.getElementById("emailAddress").value,
+    message: document.getElementById("message").value,
   };
 
   const serviceID = "service_tlva2ma";
-const templateID = "template_nwlo44p";
+  const templateID = "template_nwlo44p";
 
-emailjs.send(serviceID, templateID, params)
-.then(
-  res =>{
-    document.getElementById('name').value = '';
-    document.getElementById('emailAddress').value = '';
-    document.getElementById('message').value = '';
-    console.log(res);
-    alert("Message sent successfully");
-  }
-)
-.catch((err) => console.log(err));
+  emailjs
+    .send(serviceID, templateID, params)
+    .then((res) => {
+      document.getElementById("name").value = "";
+      document.getElementById("emailAddress").value = "";
+      document.getElementById("message").value = "";
+      console.log(res);
+      alert("Message sent successfully");
+    })
+    .catch((err) => console.log(err));
 }
 
+const popoverTriggerList = document.querySelectorAll(
+  '[data-bs-toggle="popover"]'
+);
+const popoverList = [...popoverTriggerList].map(
+  (popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl)
+);
